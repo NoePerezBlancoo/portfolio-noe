@@ -9,8 +9,10 @@ function Footer() {
             Noé Pérez Blanco
           </h3>
 
-          <p className="mt-2 text-gray-500">
-            Industrial Software Engineer · Full Stack Developer · Responsable IT
+          <p className="mt-2 max-w-xl text-gray-500">
+            Responsable IT · Tech Lead industrial · Full Stack Developer
+            especializado en digitalización, integración IT/OT, ERP,
+            automatización e infraestructura.
           </p>
         </div>
 

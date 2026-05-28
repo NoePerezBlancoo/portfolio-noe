@@ -20,13 +20,14 @@ function Contact() {
             </p>
 
             <h2 className="mb-6 max-w-3xl text-4xl font-black tracking-tight md:text-6xl">
-              ¿Hablamos de software, industria o automatización?
+              ¿Buscas un perfil que una software, industria y operación?
             </h2>
 
             <p className="max-w-2xl text-lg leading-relaxed text-gray-400">
               Estoy abierto a oportunidades donde pueda aportar experiencia en
-              desarrollo full stack, digitalización industrial, integración de
-              sistemas y automatización de procesos reales.
+              desarrollo full stack, digitalización industrial, integración
+              IT/OT, ERP, automatización, infraestructura y coordinación técnica
+              en entornos reales de producción.
             </p>
           </div>
 
@@ -40,7 +41,7 @@ function Contact() {
                 <p className="font-semibold text-white">
                   Email
                 </p>
-                <p className="text-sm text-gray-400">
+                <p className="break-all text-sm text-gray-400">
                   noeperezblanco1992@gmail.com
                 </p>
               </div>

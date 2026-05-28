@@ -7,8 +7,12 @@ function Navbar() {
       href: '#inicio',
     },
     {
-      label: 'Proyectos',
+      label: 'Casos',
       href: '#proyectos',
+    },
+    {
+      label: 'Responsabilidades',
+      href: '#responsabilidades',
     },
     {
       label: 'Experiencia',
@@ -37,12 +41,12 @@ function Navbar() {
               Noé Pérez
             </p>
             <p className="mt-1 text-xs text-gray-500">
-              Industrial Software
+              IT Industrial · Tech Lead
             </p>
           </div>
         </a>
 
-        <ul className="hidden items-center gap-7 text-sm text-gray-400 lg:flex">
+        <ul className="hidden items-center gap-6 text-sm text-gray-400 xl:flex">
           {links.map((link) => (
             <li key={link.href}>
               <a href={link.href} className="transition hover:text-violet-300">

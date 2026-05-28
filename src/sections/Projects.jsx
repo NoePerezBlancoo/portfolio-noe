@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion'
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
 import projects from '../data/projects'
 
 function Projects() {
@@ -14,17 +13,18 @@ function Projects() {
       >
         <div>
           <p className="mb-3 text-violet-300">
-            Proyectos
+            Casos reales
           </p>
 
           <h2 className="max-w-3xl text-4xl font-black tracking-tight md:text-6xl">
-            Sistemas reales para problemas reales
+            Software creado para operaciones industriales reales
           </h2>
         </div>
 
         <p className="max-w-md text-gray-500">
-          Soluciones desarrolladas para producción, administración,
-          trazabilidad, automatización e integración industrial.
+          Proyectos internos aplicados a producción, trazabilidad,
+          mantenimiento, RRHH, calidad, ingeniería, gerencia, automatización e
+          infraestructura.
         </p>
       </motion.div>
 
@@ -39,11 +39,11 @@ function Projects() {
               delay: index * 0.08,
             }}
             viewport={{ once: true }}
-            className="group relative overflow-hidden rounded-[2rem] border border-white/5 bg-white/[0.03] p-7 backdrop-blur-xl transition duration-300 hover:-translate-y-2 hover:border-violet-500/50 hover:bg-white/[0.05]"
+            className="group relative flex min-h-[460px] flex-col overflow-hidden rounded-[2rem] border border-white/5 bg-white/[0.03] p-7 backdrop-blur-xl transition duration-300 hover:-translate-y-2 hover:border-violet-500/50 hover:bg-white/[0.05]"
           >
             <div className="absolute right-0 top-0 h-32 w-32 rounded-full bg-violet-600/10 blur-3xl transition group-hover:bg-violet-600/20" />
 
-            <div className="relative">
+            <div className="relative flex h-full flex-col">
               <p className="mb-4 text-sm text-violet-300">
                 {project.category}
               </p>
@@ -52,11 +52,21 @@ function Projects() {
                 {project.title}
               </h3>
 
-              <p className="mb-7 leading-relaxed text-gray-400">
+              <p className="mb-5 leading-relaxed text-gray-400">
                 {project.description}
               </p>
 
-              <div className="mb-8 flex flex-wrap gap-2">
+              <div className="mb-7 rounded-2xl border border-white/5 bg-black/20 p-4">
+                <p className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-violet-300">
+                  Impacto
+                </p>
+
+                <p className="text-sm leading-relaxed text-gray-400">
+                  {project.impact}
+                </p>
+              </div>
+
+              <div className="mt-auto flex flex-wrap gap-2">
                 {project.technologies.map((tech) => (
                   <span
                     key={tech}
@@ -65,25 +75,6 @@ function Projects() {
                     {tech}
                   </span>
                 ))}
-              </div>
-
-              <div className="flex gap-3">
-                <a
-                  href={project.github}
-                  target="_blank"
-                  className="flex items-center gap-2 rounded-xl bg-violet-600 px-4 py-2 text-sm font-semibold transition hover:bg-violet-500"
-                >
-                  <FaGithub />
-                  GitHub
-                </a>
-
-                <a
-                  href={project.demo}
-                  className="flex items-center gap-2 rounded-xl border border-white/10 px-4 py-2 text-sm font-semibold transition hover:border-violet-500"
-                >
-                  <FaExternalLinkAlt />
-                  Demo
-                </a>
               </div>
             </div>
           </motion.article>

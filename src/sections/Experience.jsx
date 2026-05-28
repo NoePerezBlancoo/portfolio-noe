@@ -3,32 +3,52 @@ import { motion } from 'framer-motion'
 function Experience() {
   const experience = [
     {
-      role: 'Responsable IT / Tech Lead',
+      role: 'Responsable IT / Coordinador de Proyectos IT',
       company: 'AMG · Aníbal Metalmecánica Gallega',
       period: 'Mar 2025 - Actualidad',
       description:
-        'Coordinación de proyectos IT, desarrollo de soluciones internas, soporte a departamentos, interlocución con dirección y proveedores, formación a usuarios y mejora de infraestructura local.',
+        'Coordinación de proyectos IT, desarrollo de soluciones internas, soporte transversal a departamentos, interlocución con dirección y proveedores, formación de usuarios, mejora de infraestructura y participación en decisiones técnicas.',
+      highlights: [
+        'Coordinación entre producción, mantenimiento, calidad, administración, ingeniería, RRHH y dirección.',
+        'Soporte con proveedor ERP, base de datos Oracle, infraestructura, CCTV y sistemas de vigilancia.',
+        'Participación en procesos relacionados con ISO 27001 y mejora de seguridad interna.',
+      ],
     },
     {
-      role: 'Full Stack Developer / Industrial Automation',
+      role: 'Full Stack Developer / Automatización Industrial',
       company: 'AMG · Desarrollo interno',
       period: 'Ene 2022 - Mar 2025',
       description:
-        'Desarrollo de más de 100 aplicaciones internas, ERP industrial, trazabilidad de piezas, integración OPC UA, sincronización con MySQL y automatización de procesos operativos.',
+        'Desarrollo de aplicaciones internas, ERP industrial, sistemas de trazabilidad, automatizaciones, integración OPC UA, sincronización con bases de datos y mantenimiento evolutivo de herramientas críticas en producción.',
+      highlights: [
+        'Desarrollo de más de 100 aplicaciones internas orientadas a necesidades reales de fábrica.',
+        'Creación de ERP interno, trazabilidad, dashboards, reporting y herramientas departamentales.',
+        'Integración de datos industriales desde maquinaria y PLC hacia sistemas internos.',
+      ],
     },
     {
-      role: 'Sistemas, redes y soporte IT',
-      company: 'AMG · Infraestructura industrial',
-      period: 'Etapa de transición IT',
+      role: 'Técnico de redes, bases de datos y soporte IT',
+      company: 'AMG · Transición hacia IT',
+      period: 'Etapa previa',
       description:
-        'Soporte técnico, administración de datos, servidores locales, red, conectividad, CCTV, bases de datos y digitalización progresiva de procesos manuales.',
+        'Soporte técnico a usuarios y departamentos, administración de datos, resolución de incidencias, configuración de equipos, mejora de red, servidores locales y digitalización progresiva de procesos manuales.',
+      highlights: [
+        'Mejora de conectividad, hardware de red y estabilidad de servicios internos.',
+        'Apoyo a usuarios y departamentos en herramientas internas y sistemas corporativos.',
+        'Base técnica en soporte, infraestructura, datos y operación diaria.',
+      ],
     },
     {
       role: 'Mantenimiento industrial / Automatismos',
       company: 'AMG · Planta industrial',
       period: 'Etapa inicial',
       description:
-        'Experiencia directa en producción, maquinaria, mantenimiento y necesidades reales de operarios, creando una base práctica para transformar problemas de planta en software útil.',
+        'Experiencia directa en planta, maquinaria, producción, mantenimiento y necesidades reales de operarios, aportando una visión práctica para transformar problemas industriales en soluciones software útiles.',
+      highlights: [
+        'Conocimiento real de fábrica, operarios, maquinaria y procesos productivos.',
+        'Visión funcional para traducir necesidades de planta en aplicaciones mantenibles.',
+        'Base industrial para conectar producción, mantenimiento, calidad y sistemas IT.',
+      ],
     },
   ]
 
@@ -42,18 +62,25 @@ function Experience() {
         className="mb-16"
       >
         <p className="mb-3 text-violet-300">
-          Experiencia
+          Trayectoria
         </p>
 
         <h2 className="max-w-4xl text-4xl font-black tracking-tight md:text-6xl">
-          De planta industrial a liderazgo técnico
+          Evolución desde planta industrial hasta liderazgo IT
         </h2>
+
+        <p className="mt-6 max-w-3xl text-lg leading-relaxed text-gray-500">
+          Mi valor diferencial está en haber vivido la operación desde dentro:
+          producción, mantenimiento, usuarios, sistemas, datos, proveedores y
+          dirección. Eso me permite crear software que encaja con la realidad
+          diaria de una fábrica.
+        </p>
       </motion.div>
 
       <div className="relative">
         <div className="absolute left-4 top-0 hidden h-full w-px bg-gradient-to-b from-violet-500 via-white/10 to-transparent md:block" />
 
-        <div className="space-y-6">
+        <div className="space-y-7">
           {experience.map((item, index) => (
             <motion.article
               key={item.role}
@@ -79,14 +106,25 @@ function Experience() {
                   </p>
                 </div>
 
-                <span className="rounded-full border border-white/10 bg-white/[0.03] px-4 py-2 text-sm text-gray-400">
+                <span className="w-fit rounded-full border border-white/10 bg-white/[0.03] px-4 py-2 text-sm text-gray-400">
                   {item.period}
                 </span>
               </div>
 
-              <p className="leading-relaxed text-gray-400">
+              <p className="mb-6 leading-relaxed text-gray-400">
                 {item.description}
               </p>
+
+              <div className="grid gap-3 md:grid-cols-3">
+                {item.highlights.map((highlight) => (
+                  <div
+                    key={highlight}
+                    className="rounded-2xl border border-white/5 bg-black/20 p-4 text-sm leading-relaxed text-gray-400"
+                  >
+                    {highlight}
+                  </div>
+                ))}
+              </div>
             </motion.article>
           ))}
         </div>

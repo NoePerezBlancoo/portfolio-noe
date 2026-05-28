@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar'
 import Hero from './sections/Hero'
 import Projects from './sections/Projects'
+import Responsibilities from './sections/Responsibilities'
 import Experience from './sections/Experience'
 import TechStack from './sections/TechStack'
 import Contact from './sections/Contact'
@@ -19,6 +20,7 @@ function App() {
       <div className="relative z-10">
         <Hero />
         <Projects />
+        <Responsibilities />
         <Experience />
         <TechStack />
         <Contact />
