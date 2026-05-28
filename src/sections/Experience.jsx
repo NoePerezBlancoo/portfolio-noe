@@ -66,14 +66,14 @@ function Experience() {
         </p>
 
         <h2 className="max-w-4xl text-4xl font-black tracking-tight md:text-6xl">
-          Evolución desde planta industrial hasta liderazgo IT
+          Evolución desde planta industrial hasta liderazgo IT, mas de 13 años.
         </h2>
 
         <p className="mt-6 max-w-3xl text-lg leading-relaxed text-gray-500">
           Mi valor diferencial está en haber vivido la operación desde dentro:
           producción, mantenimiento, usuarios, sistemas, datos, proveedores y
           dirección. Eso me permite crear software que encaja con la realidad
-          diaria de una fábrica.
+          diaria de una fábrica con más de 13 años de experiencia.
         </p>
       </motion.div>
 

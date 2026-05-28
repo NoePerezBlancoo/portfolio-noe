@@ -97,7 +97,7 @@ function Hero() {
         <h1 className="mb-8 max-w-5xl text-5xl font-black leading-[0.95] tracking-tight text-white md:text-7xl xl:text-8xl">
           Digitalizo
           <span className="block bg-gradient-to-r from-violet-300 via-violet-400 to-cyan-300 bg-clip-text text-transparent">
-            industria real
+            Industria Real
           </span>
         </h1>
 
