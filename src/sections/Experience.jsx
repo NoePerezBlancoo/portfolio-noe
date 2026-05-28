@@ -29,7 +29,7 @@ function Experience() {
     {
       role: 'Técnico de redes, bases de datos y soporte IT',
       company: 'AMG · Transición hacia IT',
-      period: 'Etapa previa',
+      period: 'Etapa previa, Feb 2020 - Dic 2021',
       description:
         'Soporte técnico a usuarios y departamentos, administración de datos, resolución de incidencias, configuración de equipos, mejora de red, servidores locales y digitalización progresiva de procesos manuales.',
       highlights: [
@@ -41,7 +41,7 @@ function Experience() {
     {
       role: 'Mantenimiento industrial / Automatismos',
       company: 'AMG · Planta industrial',
-      period: 'Etapa inicial',
+      period: 'Etapa inicial, Ene 2013 - Ene 2020',
       description:
         'Experiencia directa en planta, maquinaria, producción, mantenimiento y necesidades reales de operarios, aportando una visión práctica para transformar problemas industriales en soluciones software útiles.',
       highlights: [
@@ -66,7 +66,7 @@ function Experience() {
         </p>
 
         <h2 className="max-w-4xl text-4xl font-black tracking-tight md:text-6xl">
-          Evolución desde planta industrial hasta liderazgo IT, mas de 13 años.
+          Evolución desde planta industrial hasta liderazgo IT.
         </h2>
 
         <p className="mt-6 max-w-3xl text-lg leading-relaxed text-gray-500">
