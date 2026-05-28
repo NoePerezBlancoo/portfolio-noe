@@ -3,9 +3,9 @@ const projects = [
     title: 'ERP interno industrial',
     category: 'Full Stack · Industria · Tiempo real',
     description:
-      'Plataforma corporativa a medida para centralizar producción, operarios, RRHH, mantenimiento, ingeniería, calidad y gerencia. Incluía espacio personal de operario, fichajes, horas, vacaciones, averías, preventivos, planos, cotas, normas, dashboards de dirección, producción en directo, máquinas conectadas y OEE por máquina y operario.',
+      'ERP interno para centralizar producción, operarios, RRHH, mantenimiento, calidad, ingeniería y gerencia en una única plataforma.',
     impact:
-      'Digitalizó procesos críticos de fábrica, conectó departamentos y convirtió información dispersa en una plataforma operativa central.',
+      'Conectó departamentos, máquinas, usuarios y datos operativos en tiempo real.',
     technologies: [
       'PHP',
       'MySQL',
@@ -21,9 +21,9 @@ const projects = [
     title: 'Sistema de trazabilidad de piezas',
     category: 'Producción · Datos · Control operativo',
     description:
-      'Sistema para registrar, consultar y controlar piezas dentro del proceso productivo, con histórico, estados, operaciones realizadas, incidencias y soporte a decisiones de producción.',
+      'Sistema para registrar piezas, estados, operaciones, histórico productivo e incidencias dentro del proceso de fabricación.',
     impact:
-      'Mejoró la visibilidad del proceso productivo, la consulta histórica, el control de estados y la fiabilidad de la información usada en planta.',
+      'Mejoró el control de producción, la consulta histórica y la fiabilidad de los datos.',
     technologies: [
       'PHP',
       'Python',
@@ -37,9 +37,9 @@ const projects = [
     title: 'Integración PLC / OPC UA',
     category: 'OT/IT · Automatización · Datos industriales',
     description:
-      'Captura, validación y sincronización de datos industriales desde maquinaria y PLC mediante OPC UA hacia aplicaciones internas y bases de datos corporativas.',
+      'Integración de datos industriales desde maquinaria y PLC mediante OPC UA hacia aplicaciones internas y bases de datos.',
     impact:
-      'Redujo entrada manual de datos, mejoró la fiabilidad de la información y acercó los datos reales de planta a los sistemas de gestión.',
+      'Redujo entrada manual de datos y conectó la planta con los sistemas de gestión.',
     technologies: [
       'Python',
       'OPC UA',
@@ -53,9 +53,9 @@ const projects = [
     title: 'RFID y control de accesos',
     category: 'IoT · Seguridad · Trazabilidad',
     description:
-      'Sistema con lector RFID y Raspberry Pi para validar accesos, gestionar UID, permisos, auditoría y reglas de autorización según usuario o nivel.',
+      'Sistema con Raspberry Pi y RFID para validar accesos, gestionar UID, permisos y registrar eventos en base de datos.',
     impact:
-      'Aportó control, trazabilidad y seguridad operativa mediante validación automática, registro de eventos y permisos centralizados.',
+      'Aportó control, trazabilidad y seguridad operativa mediante validación automática.',
     technologies: [
       'Raspberry Pi',
       'RFID',
@@ -69,9 +69,9 @@ const projects = [
     title: 'Automatización y reporting operativo',
     category: 'Procesos · Administración · Producción',
     description:
-      'Scripts y herramientas para procesar correos, transformar datos, preparar formatos bancarios, generar reportes de averías e indicadores operativos.',
+      'Scripts para procesar correos, transformar datos, preparar formatos bancarios y generar reportes operativos.',
     impact:
-      'Redujo trabajo manual, errores repetitivos y tiempos de gestión en procesos administrativos, productivos y de seguimiento operativo.',
+      'Redujo tareas manuales, errores repetitivos y tiempos de gestión administrativa.',
     technologies: [
       'Python',
       'PHP',
@@ -85,9 +85,9 @@ const projects = [
     title: 'Infraestructura IT, ERP Oracle e ISO 27001',
     category: 'Sistemas · Seguridad · Proveedores',
     description:
-      'Soporte y coordinación en áreas críticas: proveedor ERP, base de datos Oracle, servidores, red, conectividad, CCTV, sistemas de vigilancia del grupo y procesos relacionados con ISO 27001.',
+      'Soporte y coordinación de ERP Oracle, bases de datos, servidores, red, CCTV, vigilancia e ISO 27001.',
     impact:
-      'Mejoró la continuidad operativa, la seguridad, la respuesta ante incidencias y el control de infraestructura corporativa.',
+      'Mejoró continuidad operativa, seguridad, soporte e infraestructura corporativa.',
     technologies: [
       'Oracle ERP',
       'Oracle DB',

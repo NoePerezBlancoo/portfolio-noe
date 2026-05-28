@@ -74,11 +74,12 @@ function Navbar() {
           </a>
 
           <a
-            href="#contacto"
-            className="rounded-xl bg-violet-600 px-5 py-2.5 text-sm font-semibold transition hover:bg-violet-500"
-          >
-            Hablemos
-          </a>
+  href="/cv-noe-perez-blanco.pdf"
+  target="_blank"
+  className="rounded-xl bg-violet-600 px-5 py-2.5 text-sm font-semibold transition hover:bg-violet-500"
+>
+  Ver CV
+</a>
         </div>
       </nav>
     </header>

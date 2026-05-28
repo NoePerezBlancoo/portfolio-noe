@@ -121,7 +121,13 @@ function Hero() {
           >
             Responsabilidades
           </a>
-
+<a
+  href="/cv-noe-perez-blanco.pdf"
+  target="_blank"
+  className="rounded-2xl border border-violet-500/30 bg-violet-500/10 px-7 py-4 font-semibold text-violet-200 backdrop-blur-xl transition hover:-translate-y-1 hover:border-violet-400 hover:bg-violet-500/20"
+>
+  Ver CV
+</a>
           <a
             href="https://github.com/NoePerezBlancoo"
             target="_blank"
