@@ -21,6 +21,63 @@ function Hero() {
     },
   ]
 
+  const systems = [
+    {
+      name: 'Conexión',
+      status: 'OK',
+      detail: 'Red interna estable',
+      type: 'ok',
+    },
+    {
+      name: 'Base de datos',
+      status: 'OK',
+      detail: 'MySQL / Oracle operativo',
+      type: 'ok',
+    },
+    {
+      name: 'Servidor',
+      status: 'OK',
+      detail: 'Servicios internos activos',
+      type: 'ok',
+    },
+    {
+      name: 'ERP',
+      status: 'OK',
+      detail: 'Gestión corporativa disponible',
+      type: 'ok',
+    },
+    {
+      name: 'PLC / OPC UA',
+      status: 'SYNC',
+      detail: 'Datos de planta sincronizados',
+      type: 'sync',
+    },
+    {
+      name: 'Mantenimiento',
+      status: '3 averías',
+      detail: 'Incidencias activas en seguimiento',
+      type: 'warning',
+    },
+    {
+      name: 'Seguridad',
+      status: 'OK',
+      detail: 'CCTV / control interno activo',
+      type: 'ok',
+    },
+    {
+      name: 'Producción',
+      status: 'Activa',
+      detail: 'Máquinas y operarios en curso',
+      type: 'sync',
+    },
+  ]
+
+  const statusClass = {
+    ok: 'bg-green-500/10 text-green-300 border-green-500/20',
+    sync: 'bg-cyan-500/10 text-cyan-300 border-cyan-500/20',
+    warning: 'bg-yellow-500/10 text-yellow-300 border-yellow-500/20',
+  }
+
   return (
     <motion.section
       id="inicio"
@@ -102,104 +159,111 @@ function Hero() {
         </div>
       </div>
 
-      <div className="hidden lg:block">
-        <div className="relative">
-          <div className="absolute inset-0 rounded-[2rem] bg-violet-600/20 blur-3xl" />
+      <div className="relative">
+        <div className="absolute inset-0 rounded-[2.5rem] bg-violet-600/20 blur-3xl" />
 
-          <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.04] p-6 shadow-2xl backdrop-blur-xl">
-            <div className="mb-6 flex items-center gap-2">
+        <div className="relative overflow-hidden rounded-[2.5rem] border border-white/10 bg-white/[0.04] p-7 shadow-2xl backdrop-blur-xl">
+          <div className="mb-6 flex items-center justify-between">
+            <div className="flex items-center gap-2">
               <span className="h-3 w-3 rounded-full bg-red-400" />
               <span className="h-3 w-3 rounded-full bg-yellow-400" />
               <span className="h-3 w-3 rounded-full bg-green-400" />
             </div>
 
-            <div className="space-y-5">
-              <div className="rounded-2xl border border-white/5 bg-black/30 p-5">
-                <div className="mb-4 flex items-center justify-between">
-                  <p className="text-sm text-gray-500">
-                    Industrial ERP Platform
-                  </p>
-                  <span className="rounded-full bg-green-500/10 px-3 py-1 text-xs text-green-300">
-                    Live data
-                  </span>
-                </div>
+            <span className="rounded-full border border-green-500/20 bg-green-500/10 px-4 py-1.5 text-xs font-semibold text-green-300">
+              Sistema en producción
+            </span>
+          </div>
 
-                <div className="space-y-3">
-                  <div className="h-3 w-11/12 rounded-full bg-violet-400/70" />
-                  <div className="h-3 w-8/12 rounded-full bg-cyan-400/50" />
-                  <div className="h-3 w-10/12 rounded-full bg-blue-400/40" />
-                </div>
+          <div className="mb-6 rounded-2xl border border-white/5 bg-black/25 p-5">
+            <div className="mb-5 flex items-start justify-between gap-4">
+              <div>
+                <p className="mb-2 text-sm text-gray-500">
+                  Panel operativo industrial
+                </p>
+
+                <h2 className="text-2xl font-black text-white">
+                  Estado general de fábrica
+                </h2>
               </div>
 
-              <div className="grid grid-cols-2 gap-4">
-                <div className="rounded-2xl border border-white/5 bg-black/30 p-5">
-                  <p className="text-sm text-gray-500">
-                    Producción
-                  </p>
-                  <p className="mt-4 text-3xl font-black text-white">
-                    OEE
-                  </p>
-                </div>
+              <div className="text-right">
+                <p className="text-xs text-gray-500">
+                  Última sync
+                </p>
 
-                <div className="rounded-2xl border border-white/5 bg-black/30 p-5">
-                  <p className="text-sm text-gray-500">
-                    Máquinas
-                  </p>
-                  <p className="mt-4 text-3xl font-black text-white">
-                    ON
-                  </p>
-                </div>
-              </div>
-
-              <div className="rounded-2xl border border-white/5 bg-black/30 p-5">
-                <div className="mb-4 flex items-center justify-between">
-                  <p className="text-sm text-gray-500">
-                    Operaciones conectadas
-                  </p>
-                  <span className="rounded-full bg-violet-500/10 px-3 py-1 text-xs text-violet-300">
-                    OT / IT
-                  </span>
-                </div>
-
-                <div className="grid grid-cols-4 gap-2">
-                  <div className="h-16 rounded-xl bg-violet-500/20" />
-                  <div className="h-16 rounded-xl bg-cyan-500/20" />
-                  <div className="h-16 rounded-xl bg-blue-500/20" />
-                  <div className="h-16 rounded-xl bg-violet-500/20" />
-                </div>
-              </div>
-
-              <div className="rounded-2xl border border-white/5 bg-black/30 p-5">
-                <div className="grid grid-cols-3 gap-3 text-center">
-                  <div>
-                    <p className="text-xs text-gray-500">
-                      RRHH
-                    </p>
-                    <p className="mt-2 font-bold text-white">
-                      OK
-                    </p>
-                  </div>
-
-                  <div>
-                    <p className="text-xs text-gray-500">
-                      Calidad
-                    </p>
-                    <p className="mt-2 font-bold text-white">
-                      OK
-                    </p>
-                  </div>
-
-                  <div>
-                    <p className="text-xs text-gray-500">
-                      Mant.
-                    </p>
-                    <p className="mt-2 font-bold text-white">
-                      OK
-                    </p>
-                  </div>
-                </div>
+                <p className="mt-1 text-sm font-semibold text-cyan-300">
+                  hace 12s
+                </p>
               </div>
             </div>
+
+            <div className="grid gap-4 sm:grid-cols-3">
+              <div className="rounded-2xl border border-white/5 bg-white/[0.03] p-4">
+                <p className="mb-2 text-xs text-gray-500">
+                  OEE medio
+                </p>
+
+                <p className="text-3xl font-black text-white">
+                  84%
+                </p>
+              </div>
+
+              <div className="rounded-2xl border border-white/5 bg-white/[0.03] p-4">
+                <p className="mb-2 text-xs text-gray-500">
+                  Máquinas activas
+                </p>
+
+                <p className="text-3xl font-black text-white">
+                  12
+                </p>
+              </div>
+
+              <div className="rounded-2xl border border-white/5 bg-white/[0.03] p-4">
+                <p className="mb-2 text-xs text-gray-500">
+                  Averías abiertas
+                </p>
+
+                <p className="text-3xl font-black text-yellow-300">
+                  3
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="mb-6 grid gap-3 sm:grid-cols-2">
+            {systems.map((system) => (
+              <div
+                key={system.name}
+                className="rounded-2xl border border-white/5 bg-black/25 p-4"
+              >
+                <div className="mb-3 flex items-center justify-between gap-3">
+                  <p className="text-sm font-semibold text-white">
+                    {system.name}
+                  </p>
+
+                  <span
+                    className={`rounded-full border px-3 py-1 text-xs font-bold ${
+                      statusClass[system.type]
+                    }`}
+                  >
+                    {system.status}
+                  </span>
+                </div>
+
+                <p className="text-xs leading-relaxed text-gray-500">
+                  {system.detail}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <div className="rounded-2xl border border-violet-500/10 bg-violet-500/10 p-4">
+            <p className="text-sm leading-relaxed text-violet-100">
+              ERP interno, trazabilidad, producción, mantenimiento, usuarios,
+              bases de datos, servidores y maquinaria conectados en una misma
+              visión operativa.
+            </p>
           </div>
         </div>
       </div>
